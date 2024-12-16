@@ -1,0 +1,208 @@
+<html>
+<head>
+    <title>Administrativo Predial Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,220;1,220&display=swap" rel="stylesheet">
+    <style>
+        .montserrat {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 220;
+      font-style: normal;
+        }   
+        body {
+            margin: 0;
+            font-family: "Montserrat", sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            text-align: center;
+        }
+        .container {
+            padding: 15px;
+            
+        }
+        .container1 {
+            padding: 200px;
+            
+        }
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin: 15px 0;
+        }
+        h2 {
+            font-size: 2.5em;
+            font-weight: 900;
+            margin: 0px 0;
+        }
+        .text-block {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .text-block div {
+            width: 45%;
+            font-size: 1em;
+            line-height: 1.5em;
+            text-align: left;
+        }
+        .section-title {
+            font-size: 1.8em;
+            font-weight: 600;
+            margin: 70px 0 20px;
+            text-transform: uppercase;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .large {
+            grid-column: span 2;
+            height: 350px;
+            transition: transform 0.3s ease-in-out, background-color 0.3s;
+        }
+        .large:hover {
+            background-color: var(--button-hover);
+            cursor: pointer;
+            transform: scale(1.03);
+        }
+        .small {
+            height: 150px;
+            transition: transform 0.21s ease-in-out, background-color 0.3s;
+        }
+        .small:hover {
+            background-color: var(--button-hover);
+            cursor: pointer;
+            transform: scale(1.03);
+        }
+        .image-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .text-block {
+            font-size: 20;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            margin: 30px 0;
+            height: 200px; 
+        }
+        .text-block div {
+            width: 45%;
+            font-size: 1em;
+            line-height: 1.5em;
+            text-align: center; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+        }
+        .logo {
+            display: flex;
+            margin: 40px auto;
+            justify-content: center;
+            align-items: center;
+            width: 165px; 
+            height: auto; 
+        }
+
+        .logo img {
+            margin: -17px;
+            width: 100%; 
+            height: auto; 
+        }
+        .creditos {
+            width: 100%;
+            max-width: 2560px;
+            margin: 0 auto;
+            padding: 3px 5px; 
+            text-align: center;
+            background: #1e1e1e;
+            border-top: 1px solid #1e1e1e;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-size: 11px; 
+            color: #f1f1f1;
+            box-shadow: 0 0px 6px rgba(255, 255, 255, 0.1);
+        }
+        .creditos img {
+            width: 16px; 
+            height: 16px;
+            vertical-align: middle; 
+            margin-right: 5px;
+            cursor: pointer;
+        }
+      .creditos a {
+            text-decoration: none;
+            color: #f1f1f1; 
+        }
+
+
+    </style>
+</head>
+<body>
+        <div class="logo"><img src="img/cartwhite.png" alt="Logo cart"/></div>
+        <div class="container">
+        <h2>Administrativo Predial</h2>
+        <div class="text-block">
+            <div>
+                Na Administrativo Predial, garantimos excelência <br>
+                em cada projeto, cuidando das manutenções com <br>
+                profissionalismo e dedicação. <br>
+                Nosso compromisso é transformar espaços em <br>
+                ambientes seguros e funcionais.
+            </div>
+            <div>
+                Com foco em qualidade, trabalhamos para <br>
+                manter a CART sempre estruturada e <br>
+                operante. Cada detalhe reflete nosso <br>
+                empenho em entregar soluções eficientes <br>
+                e confiáveis. <br>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="section-title">Projetos</div>
+        <div class="image-grid">
+            <div class="large">
+                <a href="rotina.html"><img src="img/rotina.png" alt="Rotina diária"/></a>
+            </div>
+            <div class="small">
+                <a href="limpezadefossa.html"><img src="img/fossa.png" alt="Projeto Farol de Fossa"/></a>
+            </div>
+            <div class="small">
+                <a href="materiais.html"><img src="img/materiais.png" alt="Materiais SEDECCO"/></a>
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <div class="section-title">Equipe predial</div>
+        <div class="image-grid">
+            <div class="large">
+                <a href="atividades.html"><img src="img/atividades.png" alt="Principais Atividades"/></a>
+            </div>
+            <div class="small">
+                <a href="equipe.html"><img src="img/equipe.png" alt="Equipe"/></a>
+            </div>
+            <div class="small">
+                <a href="https://cartsp.deskbee.app/app/ticket/inventsys/detached"><img src="img/deskbee.png" alt="Deskbee"/></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="creditos">
+    <p>
+        <a href="https://linkedin.com/in/seu-perfil" target="_blank" title="LinkedIn">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            Desenvolvido por <strong>Otávio Maia</strong>
+        </a>
+    </p>
+  </div>
+</body>
+</html>
