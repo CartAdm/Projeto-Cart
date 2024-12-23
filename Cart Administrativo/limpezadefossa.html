@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle Limpeza de Fossas</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,123;1,123&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/limpezadefossa.css">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="pae">
+            <div class="filho1">
+                <a class="nav-link active" href="index.html"><img src="img/cartwhite.png"></a>
+            </div>
+            <div>
+              <ul class="filho2">
+                  <li class="nav-item">
+                    <a class="" href="rotina.html">Rotina Diária</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="" href="limpezadefossa.html">Limpeza Fossas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="" href="https://app.powerbi.com/home?experience=power-bi">Power BI</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="" href="materiais.html">Materiais</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="" href="https://cartsp.deskbee.app/app/ticket/inventsys/detached">Abrir Chamado</a>
+                    </li>
+                    <br>
+                    <li classs="nav-item">
+                      <button class="clear-filters" onclick="limparFiltros()">🧹</button>
+                    </li>
+                </ul>
+            </div>
+      </div>
+    </nav>
+  <div class="margin-table">
+    <h1>Controle de Limpeza</h1>
+    <br />
+    <div class="filter-container">
+      <div class="filter-row">
+        <input
+          type="text"
+          id="filtroLocal"
+          placeholder="Filtrar por local"
+          oninput="filtrarTabela()"
+        />
+        <input
+          type="text"
+          id="filtroMunicipio"
+          placeholder="Filtrar por município"
+          oninput="filtrarTabela()"
+        />
+        <input
+          type="text"
+          id="filtroInspetor"
+          placeholder="Filtrar por inspetor"
+          oninput="filtrarTabela()"
+        />
+      </div>
+      <div class="filter-buttons">
+        <button onclick="filtrarPorSituacao('green')">🟢 Tudo OK!</button>
+        <button onclick="filtrarPorSituacao('orange')">🟡 Em Alerta!</button>
+        <button onclick="filtrarPorSituacao('red')">🔴 Necessita programação!</button>
+      </div>
+    </div>
+    <table id="limpezaTable">
+      <thead>
+        <tr>
+          <th>Local</th>
+          <th>Município</th>
+          <th>Inspetor</th>
+          <th>Rotina (Dias)</th>
+          <th>Última Limpeza</th>
+          <th>Dias Restantes</th>
+          <th>Situação</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+    <div class="popup" id="popup">
+      <span class="popup-close" onclick="fecharPopup()">X</span>
+      <h3>Alterar Data da Limpeza</h3>
+      <input type="date" id="dataAlterada" />
+      <button onclick="salvarAlteracao()">Salvar</button>
+    </div>
+
+      <br><br><br><br><br><br>
+
+    <div class="creditos">
+      <p>
+        <a
+          href="https://linkedin.com/in/seu-perfil"
+          target="_blank"
+          title="LinkedIn"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            alt="LinkedIn"
+          />
+          Desenvolvido por <strong>Otávio Maia</strong>
+        </a>
+      </p>
+    </div>
+
+    <script src="javaScript/limpeza.js"></script>
+  </body>
+</html>

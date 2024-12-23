@@ -1,0 +1,223 @@
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 220;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 60px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+.container {
+  padding: 15px;
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: 350;
+  margin: 15px 0;
+}
+h2 {
+  font-size: 2.5em;
+  font-weight: 380;
+  margin: 0px 0;
+}
+.creditos {
+    width: 100%;
+    max-width: 2560px;
+    margin: 0 auto;
+    padding: 3px 5px; 
+    text-align: center;
+    background: #1e1e1e;
+    border-top: 1px solid #1e1e1e;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 11px; 
+    color: #f1f1f1;
+    box-shadow: 0 0px 6px rgba(255, 255, 255, 0.1);
+}
+.creditos img {
+    width: 16px; 
+    height: 16px;
+    vertical-align: middle; 
+    margin-right: 5px;
+    cursor: pointer;
+}
+.creditos a {
+    text-decoration: none;
+    color: #f1f1f1; 
+}
+.clear-filters {
+  position: fixed;
+
+  top: 10px;
+  border-radius: 50%;
+  right: 10px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: background-color 0.3s, transform 0.25s;
+}
+
+.clear-filters {
+  right: 5px;
+}
+
+.clear-filters:hover {
+  background-color: #217e8f;
+  transform: scale(1.07);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #555;
+  color: #f9f9f9;
+}
+
+th {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    margin: 10px;
+  }
+}
+
+/* Ajuste para telas menores que 480px */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+    margin: 5px;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .text-block {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .text-block div {
+      width: 100%;
+  }
+
+  .image-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .large {
+      height: 200px;
+  }
+
+  .small {
+      height: 120px;
+  }
+}
+
+nav a img {
+  width: 90px; 
+  height: auto; 
+  max-width: 100%; 
+  object-fit: contain; 
+}
+
+
+nav {
+  background-color: #178991;
+  position: fixed;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+  margin-top: -60px;
+}
+
+.filho1{
+  width: 125px;
+}
+
+.pae {
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.margin-table{
+  margin: 20px;
+  margin-bottom: 100px;
+}
+
+  /* Estilo geral do container */
+  .filho2 {
+    list-style: none; /* Remove os marcadores padrão */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Organiza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens no container */
+    gap: 15px; /* Espaçamento entre os itens */
+    background-color: #178991; /* Fundo da barra */
+    padding: 10px 20px; /* Espaçamento interno */
+  }
+  
+  /* Estilo de cada item da lista */
+  .nav-item {
+    margin: 0;
+  }
+  
+  /* Estilo dos links */
+  .nav-item a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #ffffff; /* Cor do texto */
+    font-size: 16;
+    font-weight: bold; /* Deixa o texto em negrito */
+    padding: 8px 12px; /* Espaçamento interno do link */
+    border-radius: 4px; /* Bordas arredondadas nos links */
+    transition: background-color 0.3s, transform 0.2s; /* Animação para hover */
+  }
+  
+  /* Efeito de hover nos links */
+  .nav-item a:hover {
+    background-color: #056e6c; /* Cor de fundo ao passar o mouse */
+    color: #e6faf9; /* Cor do texto ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento do tamanho */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+  }
+  
+  /* Estilo para links desativados */
+  .nav-item a:disabled,
+  .nav-item a[aria-disabled="true"] {
+    color: #cccccc; /* Cor mais clara para links desativados */
+    pointer-events: none; /* Desativa o clique */
+    cursor: not-allowed; /* Muda o cursor para não permitido */
+  }
+  .status div {
+    width: 24px; /* Tamanho do ícone */
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }

@@ -1,0 +1,62 @@
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.filter-row input {
+  padding: 5px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+.filter-buttons button {
+  padding: 5px 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #333;
+  color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.25s;
+}
+
+.filter-buttons button:hover {
+  background-color: #444;
+  transform: scale(1.07);
+}
+.margin-table {
+  margin: 10px auto; /* Margem superior/inferior e centraliza horizontalmente */
+  padding: 5px; /* Espaçamento interno */
+  max-width: 90%; /* Evita que a tabela ocupe toda a largura */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #2a2a2a;
+}
+
+/* Responsividade para margens em dispositivos menores */
+@media (max-width: 768px) {
+  body {
+    margin: 5px; /* Reduz as margens em telas menores */
+    font-size: 14px;
+  }
+
+  .margin-table {
+    margin: 15px auto; /* Ajusta margens */
+    max-width: 95%; /* Garante espaçamento nas bordas */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 2px; /* Margens mínimas para telas muito pequenas */
+    font-size: 12px;
+  }
+
+  .margin-table {
+    margin: 10px auto; /* Ajusta ainda mais para telas muito pequenas */
+    max-width: 100%; /* Garante que não ultrapasse as bordas */
+  }
+}

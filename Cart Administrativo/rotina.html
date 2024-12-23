@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farol Rotina diária</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rotina.css">
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="pae">
+            <div class="filho1">
+                <a class="nav-link active" href="index.html"><img src="img/cartwhite.png" alt="Logo"></a>
+            </div>
+            <div>
+                <ul class="filho2">
+                    <li class="nav-item"><a href="rotina.html">Rotina Diária</a></li>
+                    <li class="nav-item"><a href="limpezadefossa.html">Limpeza Fossas</a></li>
+                    <li class="nav-item"><a href="https://app.powerbi.com/home?experience=power-bi">Power BI</a></li>
+                    <li class="nav-item"><a href="materiais.html">Materiais</a></li>
+                    <li class="nav-item"><a href="https://cartsp.deskbee.app/app/ticket/inventsys/detached">Abrir Chamado</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="margin-table">
+        <h1>Farol Rotina diária</h1>
+
+        <div>
+            <input type="file" id="fileInput" accept=".xls,.xlsx" />
+            <button onclick="carregarPlanilha()">Carregar Planilha</button>
+        </div>
+
+        <div class="column-controls-container">
+            <div class="column-controls-title" onclick="toggleColumnControls()">Configurar Colunas</div>
+            <div class="column-controls-content" id="columnControls">
+                <div id="columnSelector"></div>
+            </div>
+        </div>
+
+    <!--  <div class="filter-container">
+            //<div class="filter-group">
+                <h3>Filtrar por Situação</h3>
+               // <button class="filter-btn" data-filter="🔴"><span id="redCount">0</span> 🔴 Chamado vencido! </button>
+                //<button class="filter-btn" data-filter="🟡"><span id="yellowCount">0</span> 🟡 Chamado prestes a vencer! </button>
+                //<button class="filter-btn" data-filter="🟢"><span id="greenCount">0</span> 🟢 Chamado Ok! </button>
+           // </div> 
+
+            <div class="filter-group">
+                <h3>Filtrar por Inspetor</h3>
+                <select id="inspetorFilter">
+                    <option value="">Todos</option>
+                    <option value="Edson Claudino">Edson Claudino</option>
+                    <option value="Moisés">Moisés</option>
+                    <option value="José Conceição">José Conceição</option>
+                    <option value="Nicanor Barrotela">Nicanor Barrotela</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <button id="clearFilters" class="filter-btn">Limpar Filtros</button>
+            </div>
+        </div> !-->
+
+        <table id="baseTable">
+            <thead>
+                <tr id="tableHeaders"></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="javaScript/rotina.js"></script>
+</body>
+</html>

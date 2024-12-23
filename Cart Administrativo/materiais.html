@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Materiais</title>
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,123;1,123&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/materiais.css">
+</head>
+<body data-theme="dark">
+  <nav class="nav">
+    <div class="pae">
+          <div class="filho1">
+              <a class="nav-link active" href="index.html"><img src="img/cartwhite.png"></a>
+          </div>
+          <div>
+            <ul class="filho2">
+                <li class="nav-item">
+                  <a class="" href="rotina.html">Rotina Diária</a>
+                </li>
+                <li class="nav-item">
+                  <a class="" href="limpezadefossa.html">Limpeza Fossas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="" href="https://app.powerbi.com/home?experience=power-bi">Power BI</a>
+                </li>
+                <li class="nav-item">
+                  <a class="" href="materiais.html">Materiais</a>
+                </li>
+                <li class="nav-item">
+                    <a class="" href="https://cartsp.deskbee.app/app/ticket/inventsys/detached">Abrir Chamado</a>
+                  </li>
+                  <br>
+                  <li classs="nav-item">
+                    <button class="clear-filters" onclick="limparFiltros()">🧹</button>
+                  </li>
+              </ul>
+          </div>
+    </div>
+  </nav>
+<div class="margin-table">
+  <h1>Controle de Materiais</h1>
+  <br>
+  <div class="filter-container">
+    <div class="filter-row">
+      <label for="filterCondicao">Filtrar por Condição:
+        <select id="filterCondicao" onchange="filterTable()">
+          <option value="">Todos</option>
+          <option value="Lacrado">Lacrado</option>
+          <option value="Muito bom">Muito Bom</option>
+          <option value="Bom">Bom</option>
+          <option value="Regular">Regular</option>
+          <option value="Ruim">Ruim</option>
+          <option value="Péssimo">Péssimo</option>
+        </select>
+      </label>
+      <label for="filterTipo">Filtrar por Tipo:
+        <select id="filterTipo" onchange="filterTable()">
+          <option value="">Todos</option>
+          <option value="Manutenção">Manutenção</option>
+          <option value="Ferramenta">Ferramenta</option>
+          <option value="Materiais">Materiais</option>
+          <option value="Pintura">Pintura</option>
+          <option value="Saneamento">Saneamento</option>
+          <option value="Outros">Outros</option>
+          <option value="Sinalização">Sinalização</option>
+          <option value="EPI">EPI</option>
+        </select>
+      </label>
+      <br>
+      <input type="text" id="filterNome" placeholder="Filtrar por Nome" oninput="filterTable()">
+      <input type="text" id="filterValorUnitario" placeholder="Filtrar por Valor Unitário" oninput="filterTable()">
+      <input type="text" id="filterValorNecessidade" placeholder="Filtrar por Valor da Necessidade" oninput="filterTable()">
+    </div>
+  </div>
+  <table id="ocorrenciasTable">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Marca</th>
+        <th>Valor Unitário</th>
+        <th>Valor da necessidade</th>
+        <th>Condição</th>
+        <th>Quantidade</th>
+        <th>Quantidade ideal</th>
+        <th>Tipo</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+    <tfoot>
+      <tr>
+        <td><strong>Total</strong></td>
+        <td></td>
+        <td id="totalValorUnitario">R$ 0.00</td>
+        <td id="totalValorNecessidade">R$ 0.00</td>
+        <td></td>
+        <td id="totalQuantidade">0</td>
+        <td id="totalQuantidadeIdeal">0</td>
+        <td></td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+  <div class="creditos">
+    <p>
+        <a href="https://linkedin.com/in/seu-perfil" target="_blank" title="LinkedIn">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            Desenvolvido por <strong>Otávio Maia</strong>
+        </a>
+    </p>
+  </div>
+
+  <script src="javaScript/materiais.js"></script>
+</body>
+</html>

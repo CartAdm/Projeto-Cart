@@ -1,0 +1,94 @@
+.margin-table {
+    padding: 20px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter-group h3 {
+    margin: 0;
+    color: #f9f9f9;
+}
+
+.filter-btn {
+    padding: 5px 10px;
+    
+    font-size: 14px;
+    text-align: left;
+    border: none;
+    background-color: #3a3a3a;
+    color: #f9f9f9;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.filter-btn:hover {
+    background-color: #777;
+    transform: scale(1.05);
+}
+
+.filter-btn span {
+    font-weight: 220;
+    font-size: 14px;
+    color: #eee;
+    margin-left: 5px;
+}
+
+#inspetorFilter {
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #f9f9f9;
+    width: 200px;
+    font-size: 14px;
+}
+.column-controls-container {
+    margin: 20px;
+    background-color: #2a2a2a;
+    border: 1px solid #555;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.column-controls-title {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #444;
+    color: #f9f9f9;
+}
+
+.column-controls-content {
+    display: none;
+    padding: 10px;
+}
+
+.column-controls label {
+    display: block;
+    margin: 5px 0;
+    color: #f9f9f9;
+}
+
+.column-controls input[type="checkbox"],
+.column-controls input[type="text"] {
+    margin-right: 5px;
+    padding: 5px;
+    border: 1px solid #555;
+    border-radius: 3px;
+    background-color: #2a2a2a;
+    color: #f9f9f9;
+}

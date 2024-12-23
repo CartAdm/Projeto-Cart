@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços que Prestamos</title>
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,123;1,123&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/servicos.css">
+</head>
+<body data-theme="dark">
+  <nav class="nav">
+    <div class="pae">
+          <div class="filho1">
+              <a class="nav-link active" href="index.html"><img src="img/cartwhite.png"></a>
+          </div>
+          <div>
+            <ul class="filho2">
+                <li class="nav-item">
+                  <a class="" href="rotina.html">Rotina Diária</a>
+                </li>
+                <li class="nav-item">
+                  <a class="" href="limpezadefossa.html">Limpeza Fossas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="" href="https://app.powerbi.com/home?experience=power-bi">Power BI</a>
+                </li>
+                <li class="nav-item">
+                  <a class="" href="materiais.html">Materiais</a>
+                </li>
+                <li class="nav-item">
+                    <a class="" href="https://cartsp.deskbee.app/app/ticket/inventsys/detached">Abrir Chamado</a>
+                  </li>
+                  <br>
+              </ul>
+          </div>
+    </div>
+  </nav>
+  
+  <h2>Serviços que prestamos</h2>
+  <select class="search-bar" id="serviceSelect" onchange="loadSpreadsheet()">
+      <option value="">Selecione um serviço</option>
+      <option value="saneamento">Saneamento</option>
+      <option value="limpeza_predial_extra">Limpeza Predial Extra</option>
+      <option value="civil_predial">Civil Predial</option>
+      <option value="moveis_eletrodomesticos_utensilios">Móveis e Utensílios</option>
+      <option value="controle_pragas_vetores">Controle de Pragas</option>
+      <option value="hidraulico_predial">Hidráulico Predial</option>
+      <option value="portoes_portas_janelas">Portões, Portas e Janelas</option>
+      <option value="outros">Outros</option>
+  </select>
+
+  <div id="spreadsheetContainer">
+
+  </div>
+<br><br><br><br><br>
+  <div class="creditos">
+    <p>
+        <a href="https://linkedin.com/in/seu-perfil" target="_blank" title="LinkedIn">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            Desenvolvido por <strong>Otávio Maia</strong>
+        </a>
+    </p>
+  </div>
+
+  <script src="javaScript/servicos.js"></script>
+</body>
+</html>

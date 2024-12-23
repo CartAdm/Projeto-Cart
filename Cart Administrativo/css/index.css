@@ -1,0 +1,138 @@
+.container1 {
+    padding: 0 150px 80px 150px;
+    position: relative;
+    display: inline-block;
+}
+
+.containerindex {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+}
+
+.containerindex img {
+    width: 100%;
+    height: auto;
+    opacity: 80%;
+}
+
+/* Títulos e Textos */
+.section-title {
+    font-size: 2.5em;
+    font-weight: 400;
+    margin: 70px 0 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.text-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 0;
+    height: auto;
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.text-block div {
+    width: 45%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #1c1c1c;
+}
+
+/* Grid de Imagens */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.large {
+    grid-column: span 2;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    opacity: 80%;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.large:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    background-color: var(--button-hover);
+}
+
+.small {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    opacity: 80%;
+    transition: transform 0.21s ease-in-out, background-color 0.3s;
+}
+
+.small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.small:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    background-color: var(--button-hover);
+}
+
+.image-grid .texto-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 4.5em;
+    font-family: "Montserrat";
+    text-shadow: 5px 3px 1px rgba(0, 0, 0, 0.774);
+    text-align: center;
+    margin: 20px 0;
+    z-index: 2;
+}
+.image-grid .texto-overlaysmall {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 3.5em;
+    font-family: "Montserrat";
+    text-shadow: 5px 3px 1px rgba(0, 0, 0, 0.774);
+    text-align: center;
+    z-index: 2;
+}
+
+.large img, .small img {
+    opacity: 0.5; /* Reduz apenas a opacidade da imagem */
+    transition: opacity 0.25s ease; /* Adiciona transição suave */
+}
+
+.large:hover img, .small:hover img {
+    opacity: 0.75; /* Restaura a opacidade ao passar o mouse */
+}
+
+.large .texto-overlay, .small .texto-overlaysmall {
+    opacity: 1; /* Garante que o texto tenha opacidade total */
+}
+

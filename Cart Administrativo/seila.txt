@@ -1,0 +1,16 @@
+(PRIORIDADE)
+
+1 - terminar a tela da rotina :fazer com que os filtros e contagem de filtros funcione (PRIORIDADE) 
+3 - ver como se utiliza em node.js atualizado em tempo real guardando informacoes via git hub                                                                                                                                               
+
+
+
+
+
+(SEGUNDO PLANO)
+
+1 - adaptar temas a todas telas                   4h
+2 - baixar relatorio da tabela (excel)            ..
+3 - fazer pdf                                     ..
+4 - login                                         2h
+6 - mudar layout index                            3h

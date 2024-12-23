@@ -1,0 +1,143 @@
+
+.status div {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.fossa-vazia {
+  background-image: url('img/nivelbaixoblack.png');
+}
+
+.fossa-media {
+  background-image: url('img/nivelmedioblack.png');
+}
+
+.fossa-cheia {
+  background-image: url('img/nivelaltoblack.png');
+}
+
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-row label {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #333;
+  color: #f9f9f9;
+  box-sizing: border-box;
+  text-align: left;
+  width: 200px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.filter-row label select {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: #f9f9f9;
+  font-size: 13px;
+}
+
+.filter-row input {
+  padding: 5px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+.filter-buttons button {
+  padding: 5px 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #333;
+  color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.25s;
+}
+
+.filter-buttons button:hover {
+  background-color: #444;
+  transform: scale(1.07);
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2a2a2a;
+  color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup input {
+  background-color: #333;
+  color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 90%;
+  border: 1px solid #555;
+}
+
+.popup button {
+  background-color: #444;
+  color: #f9f9f9;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.popup button:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.popup-close {
+  background-color: red;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 16px;
+}
+
+.alterar-btn {
+  padding: 5px 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #444;
+  color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.alterar-btn:hover {
+  background-color: #555;
+  color: #fff;
+  transform: scale(1.05);
+}
